@@ -30,6 +30,7 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: windows
+        # package the compiled files and save as the exe format
         path: ./${{ env.FILE_NAME }}.exe
 
   test-linux:
